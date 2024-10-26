@@ -1,0 +1,629 @@
+/* Common area */
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.custom-top {
+    height: -10%;
+    width: 100%;
+}
+
+.custom-top-pic {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    background-color: #386641;
+}
+
+.custom-top-pic-novideo {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    background-color: white;
+}
+
+.custom-top-pic .row, .custom-top-pic .col-12 {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-top-pic video {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+/* index and others. */
+
+.custom-top-pic-2 {
+    position: relative;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: black;
+}
+
+.custom-top-pic-2 .background-image-wrapper img {
+    opacity: 0.6; /* Apply opacity to the wrapper */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it stays behind other content */
+}
+
+.video-text {
+    color: #f4f1de;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.mainAbout-text {
+    color: #f4f1de;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 200px;
+    margin-left: 100px;
+    transform: none;
+    text-align: left;
+}
+
+.mainAbout-text p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.custom-navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 15px;
+    /* background-color: rgba(0, 0, 0, 0.2); Semi-transparent background */
+}
+
+.custom-navbar-novideo {
+    top: 0;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.navbar-nav a {
+    color: white;
+}
+
+/* navbar setup without video */
+
+.navbar-novideo a {
+    color: black;
+}
+
+
+.nav-item {
+    font-size: 14px;
+}
+
+.nav-link.active {
+    font-size: 14px;
+}
+
+.custom-navbar-brand img {
+    height: 115px;
+    margin-left: 10px;
+}
+
+/* dropdown-menu layout */
+
+.custom-navbar, .dropdown-menu {
+    background-color: white
+    border: none;
+}
+
+.custom-navbar .dropdown-item {
+    color: black;
+    font-size: 13px;
+}
+
+.custom-navbar .dropdown-item:hover {
+    background-color: #4a7c59; 
+    color: #f4f1de;
+}
+
+/* navbar without video */
+
+.custom-navbar-novideo .dropdown-menu {
+    background-color: white
+    border: none;
+}
+
+.custom-navbar-novideo .dropdown-item {
+    color: black;
+    font-size: 13px;
+}
+
+.custom-navbar-novideo .dropdown-item:hover {
+    background-color: #4a7c59; 
+    color: #f4f1de;
+}
+
+.custom-icon {
+    height: 40px;
+    margin-right: 8px;
+}
+
+/* mainAbout */
+
+.custom-icon2 {
+    height: 230px;
+    width: 300px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.custom-icon4 {
+    height: 250px;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.custom-icon3 {
+    height: 450px;
+    width: 900px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/* index */
+
+.custom-contents {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #386641;
+    color: #e3d5ca;
+}
+
+/* purpose */
+
+.custom-contents-2 {
+    position: relative;
+    overflow: hidden; 
+    padding: 50px 100px;
+}
+
+/* mainAbout */
+
+.custom-contents-3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #2f3e46;
+    color: #e3d5ca;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area without stretching */
+    z-index: -1; /* Sit behind the content */
+}
+
+.custom-p-2 p {
+    color: black;
+    font-size: 16px;
+}
+
+.custom-contents h2 {
+    margin-bottom: 15px;
+}
+
+.custom-contents h5 {
+    margin-bottom: 30px;
+}
+
+.custom-contents p, li {
+    font-size: 15px;
+}
+
+.custom-contents-3 .info {
+    font-weight: bold;
+    display: inline;
+}
+
+.custom-list {
+    font-size: 16px; 
+    background-color: #4a7c59; 
+    border-radius: 5px; 
+    width: 100%; 
+}
+
+.custom-list a {
+    color: black; 
+    padding: 24px 20px; 
+    display: block; 
+    font-size: 12px;
+}
+
+.custom-list a:hover {
+    background-color: #aaba9e; 
+}
+
+.custom-list .list-group-item-action.active {
+    background-color: #4a7c59; 
+    color: #f4f1de; 
+    border-color: #4a7c59;
+    outline: none;
+}
+
+.w-33 {
+    width: 33.3333%;
+    float: left;
+}
+
+.custom-carousel-image img {
+    height: 300px;
+}
+
+/* philosophy */
+
+.custom-philosophy {
+    padding: 50px;
+    background-color: #f2c14e;
+    color: #575c5c;
+}
+
+.custom-philosophy img {
+    border-radius: 15px;
+}
+
+.philosophy-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.philosophy-description {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.custom-bottom-philosophy {
+    padding: 50px;
+    background-color: #f2c14e;
+    color: #575c5c;
+}
+
+.custom-bottom-philosophy p {
+    font-size: 14px;
+    color: #575c5c;
+}
+
+.custom-philosophy-img {
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.custom-footer {
+    background-color: #386641; 
+    color: #e3d5ca;
+    padding: 50px 100px;
+    font-size: 11px; 
+}
+
+.custom-footer a {
+    color: #f4f1de;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.custom-footer button {
+    font-size: 12px;
+}
+
+.custom-footer img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.custom-footer .form-control::placeholder {
+    color: #e3d5ca;
+    font-size: 13px;
+}
+
+.custom-footer .form-control {
+    background-color: transparent;
+    border-color: #f4f1de;
+    color: #e3d5ca; 
+    font-size: 13px; 
+    width: 80%;
+}
+
+.custom-footer form .form-control {
+    background-color: transparent;
+    border-color: #f4f1de;
+    color: #f4f1de;
+}
+
+.custom-footer form .btn-primary {
+    background-color: #4a7c59;
+    border-color: #4a7c59;
+}
+
+.custom-footer form .btn-primary:hover {
+    background-color: #386641;
+    border-color: #386641;
+}
+
+/* Tip area */
+
+.main-contents {
+    padding: 56px;
+    background-color: #f2f2f2;
+}
+
+.content-container {
+    width: 640px;
+    margin: 56px auto;
+}
+
+.content-section {
+    margin: 24px 0;
+}
+
+.content-section h2 {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.content-section p {
+    margin: 8px 0;
+}
+
+.content-section p span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.palm-tree-background {
+    display: block;
+    width: 100%;
+}
+
+.background-section {
+    background-color: #272928;
+    padding: 32px;
+    color: #fff;
+}
+
+.background-section h2 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 8px 0;
+}
+
+.background-section p {
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+/* Tip area */
+
+.tip-container {
+    padding: 30px 100px;
+}
+
+.tip-container .tip-content {
+    margin: 24px 0;
+}
+
+.tip-container .tip-content h2 {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.tip-container .tip-content p {
+    margin: 8px 0;
+}
+
+.tip-container .tip-content span {
+    font-size: 40px;
+    margin: 8px 0;
+}
+
+.tip-container .tip-content .p2 {
+    font-size: 14px;
+}
+
+.tip-img {
+    display: black;
+    width: 100%;
+}
+
+.tip-bottom {
+    background-color: #272928;
+    padding: 32px;
+    color: #f2e8cf;
+}
+
+.tip-bottom .tip-bottom-content {
+    text-align: center;
+    width: 560px;
+    margin: 0 auto;
+}
+
+.tip-bottom .tip-bottom-content-sub, .tip-bottom-content-sub-2 {
+    margin: 24px 0;
+}
+
+.tip-bottom-content-sub p {
+    font-size: 24px;
+    margin: 8px 0
+}
+
+.tip-bottom-content-sub-2 h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Guestbook */
+
+.guestbook-container {
+    background-color: #babf95;
+    padding: 50px; 
+    max-width: 800px; /* Limit the width */
+    margin: 50px auto; /* Center the container */
+    border-radius: 15px;
+}
+
+.guestbook-header h4 {
+    font-size: 20px; /
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.guestbook-header p {
+    font-size: 14px; 
+    color: #555;
+}
+
+.guestbook-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.guestbook-entry {
+    background-color: white;
+    padding: 15px; 
+    margin: 15px 0; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #344e41;
+}
+
+.guestbook-entry p {
+    margin: 0;
+    font-size: 13px; 
+}
+
+#userCommentName {
+    font-size: 15px;
+}
+
+#userCommentText {
+    font-size: 13px;
+}
+
+.guestbook-entry strong {
+    display: block;
+    font-size: 15px; 
+    margin-bottom: 5px;
+}
+
+.guestbook-form {
+    margin-top: 20px; 
+}
+
+.guestbook-form h4 {
+    margin-bottom: 15px; 
+    font-size: 15px; 
+}
+
+.guestbook-form .form-label {
+    font-size: 13px; 
+}
+
+.guestbook-form .form-control::placeholder {
+    font-size: 13px;
+}
+
+.guestbook-form .btn {
+    background-color: #4a7c59;
+    border: none;
+    font-size: 13px;
+}
+
+.guestbook-form .btn:hover {
+    background-color: #386641;
+}
+
+/* Main image container */
+
+.main-image-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.main-image-container img {
+    width: 50%; /* Increase the width to make the main image bigger */
+    margin-right: 20px;
+    margin-bottom: 30px;
+    transition: opacity 0.3s ease;
+    border-radius: 15px;
+}
+
+.main-image-details {
+    flex: 1;
+    transition: opacity 0.3s ease;
+}
+
+.main-image-details h6 {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-top: 0;
+}
+
+.main-image-details p {
+    font-size: 13px;
+    color: #343a40;
+}
+
+/* Thumbnail gallery */
+.thumbnail-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.thumbnail {
+    flex: 1 1 calc(33.333% - 10px);
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.thumbnail img {
+    width: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+
+.thumbnail:hover img {
+    transform: scale(1.05);
+}
+
+.thumbnail p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #343a40;
+}

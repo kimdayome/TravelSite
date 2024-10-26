@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+    <head><title>Dayoung's Travel Note</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+     <!-- Bootstrap Inclusion-->   
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Style sheet -->
+
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+
+     <!--Top Picture Area and Menu Bar-->
+    <div class="container-fluid custom-top-pic-novideo" style="background-color: #c5c3c6;">
+      <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light custom-navbar-novideo">
+                <div class="container-fluid">
+                    <a class="navbar-brand custom-navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-nav">
+                        <ul class="navbar-nav navbar-novideo">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                    <li><a class="dropdown-item" href="mainAbout.html">About Dayoung</a></li>
+                                    <li><a class="dropdown-item" href="philosophy.html">Travel Philosophy</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="countriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Countries
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="countriesDropdown">
+                                    <li><a class="dropdown-item" href="finland.html">Finland</a></li>
+                                    <li><a class="dropdown-item" href="norway.html">Norway</a></li>
+                                    <li><a class="dropdown-item" href="paris.html">Paris</a></li>
+                                    <li><a class="dropdown-item" href="italy.html">Italy</a></li>
+                                    <li><a class="dropdown-item" href="czechRepublic.html">Cezch Rebpublic</a></li>
+                                    <li><a class="dropdown-item" href="london.html">London</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="tipsDropdown" role="button" data-bs-toggle="dropdown" aria-expended="false">
+                                    Travel Tips
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="tipsDropdown">
+                                    <li><a class="dropdown-item" href="generalTip.html">General & Safety Tips</a></li>
+                                    <li><a class="dropdown-item" href="personalTip.html">Personal Tips</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="guest.html">Guest Book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Main Content -->
+<div class="container-fluid" style="background-color: #c5c3c6; padding: 50px;">
+    <div class="main-image-container">
+        <img src="images/countries/london/london1.jpeg" alt="Main Finland" class="img-fluid" id="mainImage">
+        <div class="main-image-details" id="details">
+            <h6 style="color:#343a40">Trafalgar Square</h6>
+            <p>Trafalgar Square is always buzzing with activity. It's the perfect spot to people-watch and enjoy some iconic London vibes.</p>
+        </div>
+    </div>
+
+    <div class="thumbnail-gallery">
+        <div class="thumbnail" onclick="updateMainImage(this)" data-title="Trafalgar Square" data-detail="Trafalgar Square is always buzzing with activity. It's the perfect spot to people-watch and enjoy some iconic London vibes.">
+            <img src="images/countries/london/london1.jpeg" alt="Thumbnail 1">
+            <p>Trafalgar Square</p>
+        </div>
+        <div class="thumbnail" onclick="updateMainImage(this)" data-title="London Bridge during the day" data-detail="London Bridge has so much history packed into it. Walking across it feels like stepping back in time.">
+            <img src="images/countries/london/london2.jpeg" alt="Thumbnail 2">
+            <p>London Bridge during the day</p>
+        </div>
+        <div class="thumbnail" onclick="updateMainImage(this)" data-title="Chalk Farm" data-detail="Chalk Farm is such a trendy area with cool cafes and vibrant street art. It's a great place to chill and soak in the local culture.">
+            <img src="images/countries/london/london3.jpeg" alt="Thumbnail 3">
+            <p>Chalk Farm</p>
+        </div>
+        <div class="thumbnail" onclick="updateMainImage(this)" data-title="London Bridge late at night" data-detail="Bridge, but during night time :)">
+            <img src="images/countries/london/london4.jpeg" alt="Thumbnail 4">
+            <p>London Bridge late at night</p>
+        </div>
+        <div class="thumbnail" onclick="updateMainImage(this)" data-title="London Bridge late at night" data-detail="Bridge, but during night time :)">
+            <img src="images/countries/london/london5.jpeg" alt="Thumbnail 5">
+            <p>London Bridge late at night</p>
+        </div>
+        <div class="thumbnail" onclick="updateMainImage(this)" data-title="Piccadilly Circus" data-detail="Piccadilly Circus is like London's Times Square, always bright and lively. The energy here is contagious.">
+            <img src="images/countries/london/london6.jpeg" alt="Thumbnail 6">
+            <p>Piccadilly Circus</p>
+        </div>
+        <div class="thumbnail" onclick="updateMainImage(this)" data-title="Buckingham Palace" data-detail="Seeing Buckingham Palace in person is a must! Catching the Changing of the Guard is such a classic London experience.">
+            <img src="images/countries/london/london7.jpeg" alt="Thumbnail 7">
+            <p>Buckingham Palace</p>
+        </div>
+        <div class="thumbnail" onclick="updateMainImage(this)" data-title="Red Telephone Box" data-detail="You can't leave London without snapping a photo with a red telephone box. It's the ultimate British icon.">
+            <img src="images/countries/london/london8.png" alt="Thumbnail 8">
+            <p>Red Telephone Box</p>
+        </div>
+        <div class="thumbnail" onclick="updateMainImage(this)" data-title="Random Park somewhere in London" data-detail="Stumbled upon this random park and it was such a peaceful escape from the city hustle. Sometimes the best finds are the unexpected ones.">
+            <img src="images/countries/london/london9.jpeg" alt="Thumbnail 9">
+            <p>Random Park somewhere in London</p>
+        </div>
+    </div>
+</div>
+
+
+    <!--footer -->
+    <footer id="contact" class="bg-light text-light">
+        <div class="container-fluid custom-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Follow Me on Social Media</h5>
+                    <p><img src="images/social.png"><a href="#">Instagram</a></p>
+                    <p><img src="images/facebook.png"><a href="#">Facebook</a></p>
+                    <p><img src="images/twitter.png"><a href="#">Twitter</a></p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Send Me a Message</h5>
+                    <form action="mailto:dayoung7406@gmail.com" method="POST" enctype="text/plain">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your name!" name="name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your email address :)" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Your message here!" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Email</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    function updateMainImage(thumbnail) {
+        const mainImage = document.getElementById('mainImage');
+        const details = document.getElementById('details');
+
+        mainImage.style.opacity = 0;
+        details.style.opacity = 0;
+
+        setTimeout(() => {
+            mainImage.src = thumbnail.querySelector('img').src;
+            details.querySelector('h6').innerText = thumbnail.getAttribute('data-title');
+            details.querySelector('p').innerText = thumbnail.getAttribute('data-detail');
+
+            mainImage.style.opacity = 1;
+            details.style.opacity = 1;
+        }, 300);
+    }
+</script>
+
+        <!--Popper-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+    </body>
+    </html>
